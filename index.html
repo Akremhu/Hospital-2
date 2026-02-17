@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشفى ابن الحاج التخصصي | Ibn Al-Hajj Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50">
+
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b-2 border-blue-600">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="brand">
+                <h1 class="text-2xl font-black text-blue-700 leading-tight">مستشفى ابن الحاج التخصصي</h1>
+                <p class="text-[10px] font-bold text-green-600 tracking-[0.2em] uppercase">Ibn Al-Hajj Specialized Hospital</p>
+            </div>
+            <div class="hidden lg:flex gap-8 font-bold text-slate-600">
+                <a href="#home" class="nav-link">الرئيسية</a>
+                <a href="#about" class="nav-link">من نحن</a>
+                <a href="#departments" class="nav-link">الأقسام</a>
+                <a href="#contact" class="nav-link">اتصل بنا</a>
+            </div>
+            <button onclick="openBooking()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-bold transition shadow-lg flex items-center gap-2">
+                <i class="fab fa-whatsapp text-xl"></i> حجز موعد
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section relative min-h-[60vh] flex items-center bg-blue-900 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white space-y-6">
+                <span class="bg-green-500/20 text-green-400 px-4 py-1 rounded-full text-sm font-bold border border-green-500/30">تأسس عام 2026</span>
+                <h2 class="text-4xl lg:text-6xl font-extrabold leading-tight">رعايتكم أمانة.. <br><span class="text-green-400">وصحتكم غايتنا</span></h2>
+                <p class="text-lg text-slate-300 max-w-lg">مستشفى ابن الحاج التخصصي في المحويت - إبلاس، وجهتكم الأولى للرعاية الطبية المتقدمة والكوادر المتميزة بأسعار تناسب الجميع.</p>
+                <div class="flex gap-4">
+                    <a href="#departments" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-bold shadow-xl transition">تصفح الأقسام</a>
+                    <a href="tel:+967782629622" class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition">اتصل للطوارئ</a>
+                </div>
+            </div>
+            <div class="hidden lg:block relative">
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-green-500/20 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800" alt="Hospital" class="rounded-3xl shadow-2xl border-4 border-white/10 relative z-10">
+            </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-6 -mt-12 relative z-20">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="stat-card bg-white p-6 rounded-2xl shadow-xl border-b-4 border-blue-600 text-center">
+                <i class="fas fa-clock text-3xl text-blue-600 mb-2"></i>
+                <h4 class="text-xl font-bold">24 ساعة</h4>
+                <p class="text-sm text-slate-500">خدمة مستمرة</p>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl shadow-xl border-b-4 border-green-500 text-center">
+                <i class="fas fa-user-md text-3xl text-green-500 mb-2"></i>
+                <h4 class="text-xl font-bold">نخبة الأطباء</h4>
+                <p class="text-sm text-slate-500">كادر تخصصي</p>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl shadow-xl border-b-4 border-blue-600 text-center">
+                <i class="fas fa-tags text-3xl text-blue-600 mb-2"></i>
+                <h4 class="text-xl font-bold">أسعار مناسبة</h4>
+                <p class="text-sm text-slate-500">لكافة الفئات</p>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl shadow-xl border-b-4 border-green-500 text-center">
+                <i class="fas fa-map-marker-alt text-3xl text-green-500 mb-2"></i>
+                <h4 class="text-xl font-bold">المحويت</h4>
+                <p class="text-sm text-slate-500">إبلاس - همدان</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="departments" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800">أقسامنا التخصصية</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="dept-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl border border-slate-100 transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6 italic"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">قسم الطوارئ</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">استعداد دائم على مدار الساعة للحالات الحرجة بأحدث التجهيزات.</p>
+                </div>
+                <div class="dept-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl border border-slate-100 transition-all">
+                    <div class="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 text-2xl mb-6 italic"><i class="fas fa-female"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">النساء والولادة</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">رعاية فائقة للأم والطفل بإشراف كادر نسائي متميز.</p>
+                </div>
+                <div class="dept-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl border border-slate-100 transition-all">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6 italic"><i class="fas fa-vial"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">المختبرات</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">فحوصات شاملة ودقيقة باستخدام أجهزة مختبرية متطورة.</p>
+                </div>
+                <div class="dept-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl border border-slate-100 transition-all">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-6 italic"><i class="fas fa-x-ray"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">قسم الأشعة</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">أشعة تشخيصية دقيقة لمساعدة الأطباء في اتخاذ القرار الصحيح.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-slate-300 py-20 px-6 border-t-4 border-green-500">
+        <div class="container mx-auto grid lg:grid-cols-3 gap-12">
+            <div>
+                <h4 class="text-white text-2xl font-bold mb-6 italic">ابن الحاج التخصصي</h4>
+                <p class="leading-relaxed mb-6">منشأة طبية رائدة تخدم أبناء منطقة المحويت، نجمع بين التكنولوجيا الحديثة واللمسة الإنسانية في العلاج.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f text-white"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition"><i class="fab fa-twitter text-white"></i></a>
+                    <a href="https://wa.me/967782629622" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-green-600 transition"><i class="fab fa-whatsapp text-white"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white text-xl font-bold mb-6">روابط سريعة</h4>
+                <ul class="space-y-4">
+                    <li><a href="#about" class="hover:text-green-400 transition">- من نحن</a></li>
+                    <li><a href="#departments" class="hover:text-green-400 transition">- الأقسام الطبية</a></li>
+                    <li><a href="#home" class="hover:text-green-400 transition">- حجز موعد</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-xl font-bold mb-6">تواصل معنا</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-green-500"></i> المحويت - همدان - إبلاس</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-green-500"></i> +967 782 629 622</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-clock text-green-500"></i> متاح 24 ساعة (طوارئ)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto mt-16 pt-8 border-t border-slate-800 text-center text-xs">
+            © 2026 مستشفى ابن الحاج التخصصي | جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
